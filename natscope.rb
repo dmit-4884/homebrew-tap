@@ -5,21 +5,21 @@
 class Natscope < Formula
   desc "Web UI for browsing NATS JetStream with protobuf decoding"
   homepage "https://github.com/dmit-4884/natscope"
-  version "0.4.0"
+  version "0.4.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dmit-4884/natscope/releases/download/v0.4.0/natscope_0.4.0_darwin_amd64.tar.gz"
-      sha256 "80232c54ac205100250fd070fae1a88950658557071acb0308f3de000110c544"
+      url "https://github.com/dmit-4884/natscope/releases/download/v0.4.1/natscope_0.4.1_darwin_amd64.tar.gz"
+      sha256 "a4315fe3a0e914bdef3685f128920b73fb5c26d0bb80595c51bd687f6aa50894"
 
       define_method(:install) do
         bin.install "natscope"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dmit-4884/natscope/releases/download/v0.4.0/natscope_0.4.0_darwin_arm64.tar.gz"
-      sha256 "d8db5cf7a74eee40cbbc51d4b0b323e2185a4da634f8dca535b34c5739aaf60f"
+      url "https://github.com/dmit-4884/natscope/releases/download/v0.4.1/natscope_0.4.1_darwin_arm64.tar.gz"
+      sha256 "9d8d5d25950d1db424b2fcd2aea564161c4e1dc2f36eff0cb88dd8d8ed0ceeac"
 
       define_method(:install) do
         bin.install "natscope"
@@ -29,15 +29,15 @@ class Natscope < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dmit-4884/natscope/releases/download/v0.4.0/natscope_0.4.0_linux_amd64.tar.gz"
-      sha256 "945a15b258e8febe6350c2e46259a918adb1bd04e481dd78863ca130e0b0168f"
+      url "https://github.com/dmit-4884/natscope/releases/download/v0.4.1/natscope_0.4.1_linux_amd64.tar.gz"
+      sha256 "9b82ebd851d65caa24a754310e16058b4dbfcdbbe41243841e9b1d0d251354a5"
       define_method(:install) do
         bin.install "natscope"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dmit-4884/natscope/releases/download/v0.4.0/natscope_0.4.0_linux_arm64.tar.gz"
-      sha256 "0d6d66d460ac4b4628c5da09c40ecfc3de66b5d4511562c00d31fd8938ddbfbd"
+      url "https://github.com/dmit-4884/natscope/releases/download/v0.4.1/natscope_0.4.1_linux_arm64.tar.gz"
+      sha256 "bfca63cebb71c9fda8868368c299c63f4b2c9e2c933174cb7f64661161e06d3a"
       define_method(:install) do
         bin.install "natscope"
       end
